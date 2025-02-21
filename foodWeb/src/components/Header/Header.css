@@ -4,7 +4,7 @@
     background: url('header.png');
     background-size: contain;
     position: relative;
-   
+    background-repeat: no-repeat;
 
 }
 .header-contents{
@@ -39,4 +39,35 @@
     border-radius: 50px;
 
 }
+
+@media (max-width:1050px) {
+    .header{
+        height: 38vw;
+        background-repeat: no-repeat;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+        margin-bottom: 40px;
+    }
+    .header-contents{
+        max-width: 45%;
+
+    }
+}
+
+@media (max-width:750px) {
+ 
+    .header-contents{
+        max-width: 55%;
+        
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+        margin-bottom: 5px;
+    }
+} 
+
 
